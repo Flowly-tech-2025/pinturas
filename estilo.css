@@ -1,0 +1,970 @@
+/* ========================================
+   MOBILE FIRST - CSS BASE (320px+)
+   ======================================== */
+
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ========================================
+   CABEÇALHO - MOBILE
+   ======================================== */
+.header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background-color: #2c3e50; /* Fallback */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: white;
+    padding: 2px;
+}
+
+.company-info h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
+}
+
+.cnpj {
+    font-size: 0.7rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.contact-info {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.contact-info p {
+    margin-bottom: 0.2rem;
+}
+
+/* ========================================
+   CABEÇALHO DO ORÇAMENTO - MOBILE
+   ======================================== */
+.quote-header {
+    background: #34495e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.quote-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
+}
+
+.date {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* ========================================
+   SEÇÕES - MOBILE
+   ======================================== */
+section {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+/* ========================================
+   DADOS DO CLIENTE - MOBILE
+   ======================================== */
+.client-data {
+    background: #f8f9fa;
+}
+
+.client-info p {
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
+.client-info strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* ========================================
+   TABELAS - MOBILE
+   ======================================== */
+.table-container {
+    overflow-x: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 100%;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.75rem;
+    min-width: 500px;
+    display: table;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+}
+
+thead th {
+    padding: 0.6rem 0.4rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+tbody td {
+    padding: 0.6rem 0.4rem;
+    vertical-align: top;
+}
+
+tbody td:first-child {
+    font-weight: 500;
+    color: #2c3e50;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+tbody td:nth-child(2),
+tbody td:nth-child(3) {
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+tbody td:nth-child(4),
+tbody td:nth-child(5) {
+    text-align: right;
+    font-weight: 600;
+    color: #27ae60;
+    white-space: nowrap;
+}
+
+/* Linha de total */
+.total-row {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%) !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.total-row td {
+    color: white !important;
+    font-size: 0.7rem;
+}
+
+/* ========================================
+   RESUMO DE CUSTOS - MOBILE
+   ======================================== */
+.cost-summary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.summary-table {
+    width: 100%;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.1rem;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row.discount {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.summary-row.total {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+}
+
+/* ========================================
+   OBSERVAÇÕES - MOBILE
+   ======================================== */
+.observations {
+    background: #f8f9fa;
+}
+
+.obs-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payment-methods,
+.payment-conditions {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods h4,
+.payment-conditions h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.additional-notes {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.additional-notes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.additional-notes li {
+    padding: 0.4rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.additional-notes li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* ========================================
+   RODAPÉ - MOBILE
+   ======================================== */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+}
+
+.footer-info p:last-child {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-link.whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: #bc1888;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* ========================================
+   MEDIA QUERIES - LANDSCAPE MOBILE (altura reduzida)
+   ======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .container {
+        margin: 0.2rem auto;
+    }
+    
+    .header {
+        padding: 0.8rem;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        padding: 2px;
+    }
+    
+    .company-info h1 {
+        font-size: 1.1rem;
+    }
+    
+    .cnpj {
+        font-size: 0.75rem;
+    }
+    
+    .contact-info {
+        font-size: 0.7rem;
+    }
+    
+    .quote-header {
+        padding: 0.8rem;
+    }
+    
+    .quote-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .date {
+        font-size: 0.85rem;
+    }
+    
+    section {
+        padding: 0.8rem;
+    }
+    
+    section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    table {
+        font-size: 0.7rem;
+    }
+    
+    thead th {
+        padding: 0.5rem 0.3rem;
+        font-size: 0.65rem;
+    }
+    
+    tbody td {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    .summary-row {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .summary-row.total {
+        font-size: 0.85rem;
+    }
+    
+    .payment-methods,
+    .payment-conditions {
+        padding: 0.8rem;
+    }
+    
+    .additional-notes {
+        padding: 0.8rem;
+    }
+    
+    .footer {
+        padding: 0.8rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-info {
+        text-align: center;
+    }
+    
+    .footer-info p {
+        font-size: 0.7rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .social-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ========================================
+   MEDIA QUERIES - LANDSCAPE MOBILE (568px+)
+   ======================================== */
+@media (min-width: 568px) and (orientation: landscape) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        margin: 0.5rem auto;
+        border-radius: 8px;
+    }
+    
+    /* Cabeçalho - Landscape Mobile */
+    .header {
+        padding: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .logo-section {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 0;
+        gap: 1rem;
+    }
+    
+    .logo {
+        width: 85px;
+        height: 85px;
+        object-fit: cover;
+        padding: 2px;
+    }
+    
+    .company-info h1 {
+        font-size: 1.4rem;
+    }
+    
+    .cnpj {
+        font-size: 0.85rem;
+    }
+    
+    .contact-info {
+        text-align: right;
+        font-size: 1.1rem;
+    }
+    
+    /* Cabeçalho do Orçamento - Landscape Mobile */
+    .quote-header {
+        padding: 1rem 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .quote-header h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+    
+    .date {
+        font-size: 0.85rem;
+    }
+    
+    /* Seções - Landscape Mobile */
+    section {
+        padding: 1.2rem;
+    }
+    
+    section h3 {
+        font-size: 1.15rem;
+    }
+    
+    /* Tabelas - Landscape Mobile */
+    table {
+        font-size: 0.7rem;
+        min-width: 550px;
+    }
+    
+    thead th {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    tbody td {
+        padding: 0.7rem 0.5rem;
+    }
+    
+    tbody td:first-child {
+        max-width: 220px;
+    }
+    
+    /* Observações - Landscape Mobile */
+    .obs-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+    
+    .additional-notes {
+        grid-column: 1 / -1;
+    }
+    
+    /* Resumo de Custos - Landscape Mobile */
+    .summary-table {
+        max-width: 320px;
+        margin-left: auto;
+    }
+    
+    .summary-row {
+        padding: 0.85rem;
+        font-size: 0.85rem;
+    }
+    
+    .summary-row.total {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   MEDIA QUERIES - TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 1rem auto;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Cabeçalho - Tablet */
+    .header {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .logo-section {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        padding: 2px;
+    }
+    
+    .company-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cnpj {
+        font-size: 0.85rem;
+    }
+    
+    .contact-info {
+        text-align: right;
+        font-size: 1.1rem;
+    }
+    
+    /* Cabeçalho do Orçamento - Tablet */
+    .quote-header {
+        padding: 1.2rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .quote-header h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+    
+    .date {
+        font-size: 0.85rem;
+    }
+    
+    /* Seções - Tablet */
+    section {
+        padding: 1.5rem;
+    }
+    
+    section h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Tabelas - Tablet */
+    table {
+        font-size: 0.85rem;
+        min-width: 600px;
+    }
+    
+    thead th {
+        padding: 0.8rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    tbody td {
+        padding: 0.8rem 0.6rem;
+    }
+    
+    tbody td:first-child {
+        max-width: 250px;
+    }
+    
+    /* Observações - Tablet */
+    .obs-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .additional-notes {
+        grid-column: 1 / -1;
+    }
+    
+    /* Resumo de Custos - Tablet */
+    .summary-table {
+        max-width: 350px;
+        margin-left: auto;
+    }
+    
+    .summary-row {
+        padding: 0.9rem;
+        font-size: 0.85rem;
+    }
+    
+    .summary-row.total {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   MEDIA QUERIES - DESKTOP (1024px+)
+   ======================================== */
+@media (min-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .container {
+        margin: 2rem auto;
+    }
+    
+    /* Cabeçalho - Desktop */
+    .header {
+        padding: 2rem;
+    }
+    
+    .logo {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        padding: 2px;
+    }
+    
+    .company-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .cnpj {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info {
+        font-size: 0.85rem;
+    }
+    
+    /* Cabeçalho do Orçamento - Desktop */
+    .quote-header {
+        padding: 1.5rem 2rem;
+    }
+    
+    .quote-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .date {
+        font-size: 1.1rem;
+    }
+    
+    /* Seções - Desktop */
+    section {
+        padding: 2rem;
+    }
+    
+    section h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Tabelas - Desktop */
+    table {
+        font-size: 1.1rem;
+        min-width: 700px;
+    }
+    
+    thead th {
+        padding: 1rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    tbody td {
+        padding: 1rem 0.8rem;
+    }
+    
+    tbody td:first-child {
+        max-width: 300px;
+    }
+    
+    /* Observações - Desktop */
+    .obs-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .payment-methods,
+    .payment-conditions {
+        padding: 1.5rem;
+    }
+    
+    .payment-methods h4,
+    .payment-conditions h4 {
+        font-size: 1.1rem;
+    }
+    
+    .additional-notes {
+        padding: 1.5rem;
+    }
+    
+    .additional-notes li {
+        font-size: 1.1rem;
+    }
+    
+    /* Resumo de Custos - Desktop */
+    .summary-table {
+        max-width: 400px;
+    }
+    
+    .summary-row {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .summary-row.total {
+        font-size: 1.1rem;
+    }
+    
+    /* Rodapé - Desktop */
+    .footer {
+        padding: 2rem;
+    }
+    
+    .footer-info p {
+        font-size: 1.1rem;
+    }
+    
+    .social-link {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .social-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* ========================================
+   MEDIA QUERIES - LARGE DESKTOP (1200px+)
+   ======================================== */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    /* Tabelas - Large Desktop */
+    table {
+        min-width: 800px;
+    }
+    
+    tbody td:first-child {
+        max-width: 350px;
+    }
+    
+    /* Observações - Large Desktop */
+    .obs-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .additional-notes {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ========================================
+   IMPRESSÃO
+   ======================================== */
+@media print {
+    body {
+        background: white;
+        font-size: 12px;
+    }
+    
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    .header {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .quote-header {
+        background: #34495e !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .total-row {
+        background: #27ae60 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .summary-row.total {
+        background: #27ae60 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .footer {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .table-container {
+        overflow: visible;
+    }
+    
+    table {
+        min-width: auto;
+    }
+}
